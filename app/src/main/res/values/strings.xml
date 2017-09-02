@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">ECGIdentification</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!-- operation -->
+    <string name="draw">draw</string>
+    <string name="start">start</string>
+    <string name="stop">stop</string>
+    <string name="clear">clear</string>
+    <string name="store">store</string>
+
+</resources>
