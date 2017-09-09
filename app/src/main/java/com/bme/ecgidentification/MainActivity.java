@@ -21,7 +21,6 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Button;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -29,6 +28,8 @@ import java.io.InputStreamReader;
 import java.io.OutputStream;
 import java.net.ServerSocket;
 import java.net.Socket;
+
+import cn.bmob.v3.Bmob;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
@@ -111,6 +112,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         initCanvas();
         startConnect();
         initCallback();
+        initBmob();
     }
 
     @Override
@@ -297,6 +299,9 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         });
     }
 
+    private void initBmob(){
+        Bmob.initialize(this, BmobUtil.ApplicationId,"bmob");
+    }
 
     public void Draw(int[] data) {
         // TODO Auto-generated method stub
