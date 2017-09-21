@@ -19,7 +19,7 @@ import cn.bmob.v3.listener.UpdateListener;
  * @ClassName: MainActivity
  * @Description: TODO
  * @author smile
- * @date 2014-5-20 ����4:10:29
+ * @date 2014-5-20 4:10:29
  */
 public class MainActivity extends BaseActivity implements OnClickListener {
 
